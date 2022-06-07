@@ -1,0 +1,26 @@
+[
+    {
+        "examStatus": "GST Model Test-1",
+        "examCategory": "Unit-A Science"
+    },
+    {
+        "examStatus": "GST Model Test-1",
+        "examCategory": "Unit-B Science"
+    },
+    {
+        "examStatus": "GST Model Test-2",
+        "examCategory": "Unit-A Science"
+    },
+    {
+        "examStatus": "GST Model Test-2",
+        "examCategory": "Unit-B Science"
+    },
+    {
+        "examStatus": "GST Model Test-1",
+        "examCategory": "Unit-A Commerce"
+    },
+    {
+        "examStatus": "GST Model Test-2",
+        "examCategory": "Unit-A Commerce"
+    }
+]
