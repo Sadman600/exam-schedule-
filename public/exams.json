@@ -1,26 +1,34 @@
 [
-    {
-        "examStatus": "GST Model Test-1",
-        "examCategory": "Unit-A Science"
-    },
-    {
-        "examStatus": "GST Model Test-1",
-        "examCategory": "Unit-B Science"
-    },
-    {
-        "examStatus": "GST Model Test-2",
-        "examCategory": "Unit-A Science"
-    },
-    {
-        "examStatus": "GST Model Test-2",
-        "examCategory": "Unit-B Science"
-    },
-    {
-        "examStatus": "GST Model Test-1",
-        "examCategory": "Unit-A Commerce"
-    },
-    {
-        "examStatus": "GST Model Test-2",
-        "examCategory": "Unit-A Commerce"
-    }
+    [
+        {
+            "label": "GST Model Test-1",
+            "value": "GST Model Test-1"
+        },
+        {
+            "label": "GST Model Test-2",
+            "value": "GST Model Test-2"
+        },
+        {
+            "label": "GST Model Test-3",
+            "value": "GST Model Test-3"
+        },
+        {
+            "label": "GST Model Test-4",
+            "value": "GST Model Test-4"
+        }
+    ],
+    [
+        {
+            "label": "Unit-A Science",
+            "value": "Unit-A Science"
+        },
+        {
+            "label": "Unit-B Science",
+            "value": "Unit-B Science"
+        },
+        {
+            "label": "Unit-C Science",
+            "value": "Unit-C Science"
+        }
+    ]
 ]
