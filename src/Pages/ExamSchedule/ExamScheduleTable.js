@@ -9,7 +9,7 @@ const ExamScheduleTable = () => {
     const toastRef = useRef();
     const [schedules, setSchedules] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/examSchedule')
+        fetch('https://immense-basin-69386.herokuapp.com/examSchedule')
             .then(res => res.json())
             .then(data => setSchedules(data))
     }, [schedules])

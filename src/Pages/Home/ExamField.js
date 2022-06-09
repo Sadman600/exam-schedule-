@@ -6,6 +6,7 @@ import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
 
 const ExamField = () => {
+
     const toastRef = useRef();
     const [examName, setExamName] = useState('');
     const [examCategory, setExamCategory] = useState('');
@@ -38,7 +39,7 @@ const ExamField = () => {
     const handleExam = (e) => {
         e.preventDefault();
 
-        fetch('http://localhost:5000/examSchedule', {
+        fetch('https://immense-basin-69386.herokuapp.com/examSchedule', {
             method: 'POST',
             body: JSON.stringify({
                 examName: e.target.examName.value,
@@ -67,16 +68,19 @@ const ExamField = () => {
             .then(data => {
                 if (data.acknowledged) {
                     toastRef.current.show({ severity: 'success', summary: 'Success Message', detail: 'Exam Schedule Saved' });
+                    e.target.value.reset();
                 }
+
             })
     }
+
     return (
         <div>
             <Toast ref={toastRef} />
             <form onSubmit={handleExam}>
                 <div>
                     <span className="p-float-label">
-                        <InputText id="in" name='examName' value={examName} onChange={(e) => setExamName(e.target.value)} />
+                        <InputText id="in" name='examName' value={examName} onChange={(e) => setExamName(e.target.value)} required />
                         <label htmlFor="in">Exam Name</label>
                     </span>
                 </div>
